@@ -14,14 +14,28 @@
 // magick()
 
 let square = document.querySelectorAll(".colours");
-let ntimesclick={
-    'red':0,'yellow':0,'green':0
+let ntimesclick = {
+  red: 0,
+  yellow: 0,
+  green: 0,
 };
 // console.log(square[1].value);
 square.forEach((squares) => {
   squares.onclick = () => {
-    ntimesclick[squares.value]+=1
-    squares.innerHTML=ntimesclick[squares.value]
-    console.log("you have clicked" +" "+ squares.value);
+    ntimesclick[squares.value] += 1;
+    squares.innerHTML = ntimesclick[squares.value];
+    console.log("you have clicked" + " " + squares.value);
   };
 });
+
+function clears() {
+  square.forEach((squares) => {
+    {
+      squares.innerHTML = " ";
+    };
+  });
+}
+let clearbtn = document.getElementById("clear");
+clearbtn.onclick = () => {
+  console.log(clears());
+};
