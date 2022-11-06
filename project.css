@@ -1,0 +1,23 @@
+#colours_red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 15px;
+    
+   
+}
+#colours_yellow{
+   width: 100px;
+   height: 100px;
+    background-color:rgb(255, 255, 0);
+    margin: 15px;
+}
+#colours_green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 15px;
+}
+#The_head{
+    display: flex;
+}
